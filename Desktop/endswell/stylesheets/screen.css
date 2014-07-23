@@ -59,12 +59,12 @@ body {
    }
 
 .title{
-  margin-left: 99999999999999999px;
+  margin-left: 9999px;
   overflow: hidden;
 } 
 
 /*往上箭頭*/
-.up-arrow{
+/*.up-arrow{
   width: 20px;
   height: 20px;
   background-image: url("../images/scroll-top.png");
@@ -72,10 +72,10 @@ body {
   position: fixed ;
   left: 1320px ;
   top: 600px;
-}
+}*/
 
 .wrapper{
-  margin: 4px 0 0 20px;
+  /*margin: 20px 20px 0 20px;*/
   /*background-color: black;*/
   /*border: 20px;*/
   width: auto;
@@ -84,7 +84,8 @@ body {
 
 /*導航欄*/
 .endswell-main{
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 638px;
   background-image: url("../images/p1.jpg");
   background-size: 1330px 800px;
@@ -141,7 +142,8 @@ body {
 /*熱門商品*/
 .featured-reference{
   background-attachment: fixed;
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 630px;
   background-color: #FFF;
   font-weight: 700;
@@ -149,7 +151,8 @@ body {
 
 .featured-reference p{
   position: relative; 
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 26px;
   bottom: 10px;
 
@@ -182,7 +185,8 @@ body {
   margin: 40px 0 20px 590px;
 }
 .featured-style{
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 300px;
   
 }
@@ -259,7 +263,8 @@ div[class*="featured-style-photo"]{
 .entry-content-1{
   
   background-attachment: fixed;
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 638px;
   background-image: url("../images/3mens-3colors-light1.jpg");
   background-size: 1330px 800px;
@@ -295,7 +300,8 @@ div[class*="featured-style-photo"]{
   padding-top: 100px;
   background-color: #FFF;
   text-align: center;
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 300px;
 }
 
@@ -340,7 +346,8 @@ div[class*="featured-style-photo"]{
 .entry-content-3{
   /*position: absolute;*/
 
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 400px;
   background-attachment: fixed;
   background-image: url("../images/DSC07763.jpg");
@@ -360,9 +367,10 @@ div[class*="featured-style-photo"]{
 
 /*訂閱*/
 .insider-list{
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 200px;
-  background-color: #C7D6FF;
+  /*background-color: #C7D6FF;*/
   text-align: left;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
@@ -412,7 +420,8 @@ div[class*="featured-style-photo"]{
 .footer{
   position: absolute;
   /*background-color: red;*/
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   height: 150px;
   margin-top: 30px;
   /*letter-spacing: 30px;*/
@@ -424,7 +433,8 @@ div[class*="featured-style-photo"]{
 
 .footer p{
   position: relative;
-  width: 1309px;
+  /*width: 1309px;*/
+  width: 100%;
   top: -15px;
 }
 
@@ -466,3 +476,165 @@ div[class*="data"]{
   margin-top: 30px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------*/
+/*edit by Peter*/
+/*--------------------------*/
+
+
+
+
+
+/**放在html的分隔線圖片，它的寬高要怎麼設?(<p><img src=""></p>)*/
+/*要搭配html部分的說明看！*/
+.endswell-main, .insider-list{
+  position: relative;/*子元素如果有position: absolute;，父元素就要有注意position: relative;*/
+}
+
+.seperater{
+  height: 1em;
+  width: 100%;
+  background-image: url(../images/scallop.png);
+  background-size: 960px;/*控制圖片大小*/
+  background-repeat: repeat-x;/*控制只有水平方向圖片會重複*/
+  position: absolute;/*子元素如果有position: absolute;，父元素就要有注意position: relative;*/
+  bottom: 0em;
+  left: 0;
+}
+.squiggle{
+  background-image: url(../images/squiggle.png);
+}
+
+
+
+
+
+
+
+
+
+/*信箱不能 text-decoration?*/
+.mail-underline{
+  text-decoration: underline;/*要底線*/
+  /*text-decoration: none;不要底線*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/*社群icon為什麼間隔距離有「_ _」*/
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*箭頭*/
+.up-arrow{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/scroll-top.png");
+  background-size: 20px;
+  position: fixed ;
+  right: 10px;/*注意這邊使用的是right跟bottom，之前的是left跟top，效果不一樣！*/
+  bottom: 60px;
+  z-index: 100;
+/*  有使用position: fixed;時要搭配z-index，這樣才不會被其他東西壓住，
+  現在沒有使用z-index，箭頭會被最上面那張大圖壓住*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*你有一些<div>設定width: 1309px;這樣會造成網頁無法置中，
+應該是把.wrapper設定成以下的方式，然後把1309px全部改成width: 100%，
+這樣wrapper裡面的<div>才能盡可能把寬度延伸出去，把wrapper填滿*/
+
+/*改成width: 100%後，裡面的背景圖片可能會不夠大，所以要
+background-position: center center;
+background-size: cover;
+這樣才能縮放圖片以填滿整個背景。*/
+
+.wrapper{
+  /*margin: 20px 20px 0 20px;*/
+/*  這邊不該使用margin，因為margin講求的是「自己本身」與「相鄰元素」的關係，
+  但我們現在的目標是將週邊留白（週邊就是螢幕的邊緣了，沒有「相鄰元素」），*/
+  padding: 20px 20px 0 20px;
+  width: auto;
+  min-width: 1304px;
+  height: auto;
+}
+
+
+/*--------------------------
+/*edit by Peter*/
+/*--------------------------*/
+
+
+

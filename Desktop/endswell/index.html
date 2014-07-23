@@ -7,15 +7,22 @@
 </head>
 
 <body>
-	<div class="title">
-	<h1>endswell</h1></div>
 
+	<!-- 這個應該是跟logo寫在一起！ 我移到<div class="endswell-logo">裡面了-->
+	<!-- 	<div class="title">
+		<h1>endswell</h1></div>-->
 	
 
 	<div class="wrapper">
-	<a href="#"><span class="up-arrow"></span></a>
+		<!-- <a href="#"><span class="up-arrow"></span></a> -->
+		<!-- 。<span>是多餘的，應該寫成下面這樣： -->
+		<a href="#" class="up-arrow"></a>
 		<div class="endswell-main">
-			<a href="index.html"><div class="endswell-logo"></div></a>	
+			<a href="index.html">
+				<div class="endswell-logo">
+					<h1 class="title">endswell</h1>
+				</div>
+			</a>	
 			<nav>
 				<ul class="endswell-manu">
 					<a href="#"><li class="manu-item">Cart</li></a>
@@ -28,10 +35,32 @@
 			</nav>
 			<div class="endswell-introduction-word"><h1>Endswell blends traditional craft, modern technology and progressive values.</h1></div>
 			<!-- <div class="navgation-photo"></div> -->
+			
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
+
+			<div class="seperater"></div>
+
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
+
 		</div>
 
 		<div class="featured-reference">
-			<p><img src="images/scallop.png"></p>
+			
+
+
+			<!-- edit by Peter -->
+			<!-- <p><img src="images/scallop.png"></p> -->
+<!-- 			我不太了解為何這邊要使用<p>把<img>包起來？這樣不但多此一舉而且也不符合一般普遍的寫法，
+			通常如果是拿來裝飾用的圖片，會建議做成背景圖片，以免滑鼠拉網頁的時候把圖片拖曳出來（<img>做的圖片可以用滑鼠直接拖動，複製到桌面），所以裝飾用的圖片我會用<div>設定成背景圖片： -->
+			<!-- 看<div class="seperater">的部分，我放在<div class="endswell-main">裡面。 -->
+
+
+
+
 			<div class="featured-reference-word">
 				<h2>The Endswell Collection by Yield – <br>Solid gold heirlooms cast from 3d prints.</h2>
 			</div>
@@ -121,16 +150,38 @@
 				<img src="images/signature.png">
 			</div>
 			<a href="#">JOIN OUR INSIDER'S LIST</a>
+
+
+
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
+			<!-- 使用兩個class，第一個是重複使用上面剛剛用過的style，第二個是把背景圖片換掉。 -->
+			<div class="seperater squiggle"></div>
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
+
+
+
 		</div>
+
 	</div>
 		<footer class="footer">
-			<p><img src="images/squiggle.png"></p>
+
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
+			<!-- <p><img src="images/squiggle.png"></p> -->
+			<!-- --------------------- -->
+			<!-- 修改處 -->
+			<!-- --------------------- -->
 			<div class="footer-da">
 				<div class="data-email">
 					<h4>
 						Get in touch
 						<br>	
-						<a href="mailto:hello@endswell.co">hello@endswell.co</a>
+						<a href="mailto:hello@endswell.co" class="mail-underline">hello@endswell.co</a>
 					</h4>
 				</div>
 				<div class="data-address">
