@@ -1,0 +1,468 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+  .carousel-indicators {
+    bottom: 20px; } }
+.clearfix:before, .clearfix:after {
+  content: " ";
+}
+
+body {
+  font-family: "proxima-nova", Helvetica, Arial, "Oxygen", sans-serif;
+   }
+
+.title{
+  margin-left: 99999999999999999px;
+  overflow: hidden;
+} 
+
+/*往上箭頭*/
+.up-arrow{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/scroll-top.png");
+  background-size: 20px 20px;
+  position: fixed ;
+  left: 1320px ;
+  top: 600px;
+}
+
+.wrapper{
+  margin: 4px 0 0 20px;
+  /*background-color: black;*/
+  /*border: 20px;*/
+  width: auto;
+  height: auto;
+}
+
+/*導航欄*/
+.endswell-main{
+  width: 1309px;
+  height: 638px;
+  background-image: url("../images/p1.jpg");
+  background-size: 1330px 800px;
+  background-attachment: fixed;
+}
+
+.endswell-logo{
+  
+  background-image: url("../images/endswell_logo1.png");
+  background-size: 99px 33px;
+  background-repeat: no-repeat;
+  width: 99px;
+  height: 33px;
+  position: absolute; 
+  margin: 30px 0 0 70px;
+}
+
+.endswell-manu{
+  margin-right: 70px; 
+}
+
+.manu-item{
+  font-weight: 700;
+  float: right;
+  margin: 20px 5px 0 5px;
+  padding-bottom: 5px;
+  color: #0F0F0F;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+}
+
+
+.manu-item:hover   {  border-style:solid;
+  border-bottom:solid #2a2e7e;}
+.manu-item:active  {color:yellow;}
+
+.endswell-introduction-word{
+  position: absolute;
+  width: 700px;
+  height: 76px;
+  /*background-color: #25B18A;*/
+  margin-top: 300px;
+  margin-left: 350px;
+  text-align: center;
+  font-size: 32px;
+  color: #2a2e7e;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+
+/*熱門商品*/
+.featured-reference{
+  background-attachment: fixed;
+  width: 1309px;
+  height: 630px;
+  background-color: #FFF;
+  font-weight: 700;
+}
+
+.featured-reference p{
+  position: relative; 
+  width: 1309px;
+  height: 26px;
+  bottom: 10px;
+
+}
+.featured-reference-word{
+
+  width: 574px;
+  height: 50px;
+  /*background-color: #188A45;*/
+  text-align: center;
+  font-size: 15px;
+  color: #2a2e7e;
+  line-height: 1.2;
+  letter-spacing: .8px;
+  margin: 26px 0 0 370px;
+  padding-top: 10px;
+
+}
+
+.featured-reference-word-2{
+  width: 128px;
+  height: 18px;
+  color: #2a2e7e;
+  font-size: 12px;
+
+  margin-top: 30px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #2a2e7e;
+  text-align: center;
+  margin: 40px 0 20px 590px;
+}
+.featured-style{
+  width: 1309px;
+  height: 300px;
+  
+}
+.featured-style-row{
+  text-align: center;
+  
+  float: right;
+  margin-right: 55px;
+
+}
+
+.featured-style-row a{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0F0F0F;
+  line-height: 1.2;
+
+
+}
+
+div[class*="featured-style-photo"]{
+  width: 361px;
+  height: 218px;
+  background-size: 361px 218px;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
+
+.featured-style-photo-1{
+  background-image: url("../images/infinity1.jpg");
+}
+
+.featured-style-photo-2{
+  background-image: url("../images/axis3.jpg");
+}
+
+.featured-style-photo-3{
+  background-image: url("../images/axis1.jpg");
+}
+
+.featured-reference-shop{
+  width: 500px;
+  height: 50px;
+  /*background-color: red;*/
+  margin-left: 410px;
+  text-align: center;
+}
+
+.featured-reference-shop h3{
+  font-style:italic;
+  color: #2a2e7e;
+  font-size: 12px;
+
+}
+
+.featured-reference-shop a{
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 10px;
+  display: block;
+  background-color: #2a2e7e;
+  letter-spacing: 0.5;
+  border-radius: 2px;
+  width: 250px;
+  height: auto;
+  margin: 20px 0 0 120px;
+  padding: 15px 0;
+ 
+}
+
+/*基本介紹1*/
+.entry-content-1{
+  
+  background-attachment: fixed;
+  width: 1309px;
+  height: 638px;
+  background-image: url("../images/3mens-3colors-light1.jpg");
+  background-size: 1330px 800px;
+  text-align: center;
+}
+
+.entry-content-1 img{
+  width: 40px;
+  height: 40px;
+  background-size: 40px 42px;
+  background-repeat: no-repeat;
+}
+.entry-content-1 h1{
+  padding-top: 230px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #2a2e7e;
+}
+.entry-content-1 h3{
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #2a2e7e;
+  font-weight: 700;  
+  margin: 20px 0 60px 300px; 
+  width: 675px;
+  height: 57px;
+}
+
+/*基本介紹2*/
+.entry-content-2{
+  padding-top: 100px;
+  background-color: #FFF;
+  text-align: center;
+  width: 1309px;
+  height: 300px;
+}
+
+.entry-content-2 h1{
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #2a2e7e;
+}
+
+.entry-content-2 h3{
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #2a2e7e;
+  font-weight: 700; 
+  margin-top: 20px; 
+}
+
+.entry-content-format{
+  margin: 20px 0 0 300px;
+}
+.entry-content-row{
+  margin: 0 100px 0 0 ; 
+  float: left;
+  font-size: 16px; 
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #2a2e7e;
+}
+
+.entry-content-row b{
+  font-weight: 700;
+}
+.entry-content-row img{
+  width: 60px;
+  height: 60px;
+}
+
+
+/*基本介紹3*/
+.entry-content-3{
+  /*position: absolute;*/
+
+  width: 1309px;
+  height: 400px;
+  background-attachment: fixed;
+  background-image: url("../images/DSC07763.jpg");
+  background-size: 1330px 800px;
+  text-align: center;
+  font-size: 23px;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #0F0F0F;;
+}
+
+.entry-content-3 h2{
+  padding: 150px 0 30px 0;
+
+}
+
+
+/*訂閱*/
+.insider-list{
+  width: 1309px;
+  height: 200px;
+  background-color: #C7D6FF;
+  text-align: left;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.insider-list img{
+  width: 150px;
+  height: 41px;
+}
+
+.insider-list-word{
+  float: left;
+  width: 537px;
+  height: 149px;
+  /*background-color: #FFF;*/
+  margin: 30px 0 0 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left; 
+  color: #2a2e7e;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  
+  
+  
+}
+
+.insider-list a{
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 700;
+  /*display: block;*/
+  width: 270px;
+  height: auto;
+  background-color: #2a2e7e;
+  float: right;
+  margin: 30px 50px 0 0 ;
+  padding: 15px 0;
+  border-radius: 2px;
+  letter-spacing: 0.5;
+
+}
+
+/*註腳*/
+.footer{
+  position: absolute;
+  /*background-color: red;*/
+  width: 1309px;
+  height: 150px;
+  margin-top: 30px;
+  /*letter-spacing: 30px;*/
+  font-weight: 700;
+  color: #0F0F0F;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.footer p{
+  position: relative;
+  width: 1309px;
+  top: -15px;
+}
+
+.footer-da{
+  
+  position: absolute;
+  width: 545px;
+  height: 45px;
+  margin-left: 70px;
+
+}
+
+div[class*="data"]{
+  margin-right: 60px;
+  float: left;
+
+  
+}
+
+
+.yield-design{
+ 
+  float: right;
+  margin-right: 50px;
+  text-decoration: none;
+  
+}
+.yield-design-1{
+  width: 200px;
+  color: #0F0F0F;
+  text-decoration: none;
+}
+
+.yield-design-2{
+  color: #0F0F0F;
+  text-decoration: none;
+}
+.yield-design h4{
+  margin-top: 30px;
+
+}
